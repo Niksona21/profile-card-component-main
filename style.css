@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+}
+
+.top {
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    z-index: -1;
+}
+
+.bottom {
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    z-index: -1;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.img-card {
+    position: relative;
+}
+
+.img-card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.imga img {
+    width: 100%;
+}
+
+.victor img {
+    border-radius: 50%;
+    width: 8rem;
+    position: absolute;
+    left: 50%;
+    bottom: -3rem;
+    border: 5px solid #fff;
+    transform: translateX(-50%);
+}
+
+.profile-name {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.profile-name h1 {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.profile-name span {
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+.profile-name p{
+    color: var(--Dark-grayish-blue);
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.stats {
+    border-top-style: solid;
+    border-color: var(--Dark-gray);
+    border-width: 1px;
+    padding: 2rem;
+}
+
+.stats ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats ul li {
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.stats ul li span {
+    display: block;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 0.15rem;
+    margin-top: 0.3rem;
+}
+
+
+@media screen and (max-width: 475){
+    .top {
+    height: 375px;
+    width: 375px;
+    top:-160px;
+    left:-167px;
+    }
+    
+    .bottom {
+    height: 375px;
+    width: 375px;
+    bottom: -79px;
+    right: -167px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
